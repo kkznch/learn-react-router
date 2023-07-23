@@ -8,8 +8,8 @@
 ## Installation
 1. Clone the repository
     ```sh
-    $ git clone git@github.com:kkznch/learn-react-without-create-react-app.git
-    $ cd learn-react-without-create-react-app
+    $ git clone git@github.com:kkznch/learn-react-router.git
+    $ cd learn-react-router
     ```
 2. Run yarn install
     ```sh
@@ -17,7 +17,7 @@
     ```
 
 ## Usage
-Run yarn start command.
+Run yarn dev command.
 ```sh
-$ yarn start
+$ yarn dev
 ```
