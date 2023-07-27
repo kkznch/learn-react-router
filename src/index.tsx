@@ -2,12 +2,12 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 // eslint-disable-next-line import/namespace
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import App from '@/App';
+import Root from './routes/root';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />,
+    element: <Root />,
   },
 ]);
 
