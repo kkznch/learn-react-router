@@ -1,6 +1,12 @@
 import { FC } from 'react';
 // eslint-disable-next-line import/namespace
-import { Form } from 'react-router-dom';
+import { Form, useLoaderData } from 'react-router-dom';
+import { getContact } from '../contacts';
+
+export const loader = async ({ params }) => {
+  const contact = await getContact(params.contactId);
+  return { contact };
+};
 
 type FavoriteProps = {
   contact: {
@@ -30,14 +36,7 @@ const Favorite: FC<FavoriteProps> = ({ contact }) => {
 };
 
 const Contact = () => {
-  const contact = {
-    first: 'Your',
-    last: 'Name',
-    avatar: 'https://placekitten.com/g/200/200',
-    twitter: 'your_handle',
-    notes: 'Some notes',
-    favorite: true,
-  };
+  const { contact }: any = useLoaderData();
 
   return (
     <div id="contact">
