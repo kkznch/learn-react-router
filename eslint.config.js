@@ -71,6 +71,10 @@ export default [
           'newlines-between': 'never',
         },
       ],
+      'import/named': 'off',
+      'import/namespace': 'off',
+      'import/default': 'off',
+      'import/no-named-as-default': 'off',
     },
   },
 ];

@@ -1,5 +1,4 @@
 import { FC } from 'react';
-// eslint-disable-next-line import/namespace
 import { Form, useLoaderData } from 'react-router-dom';
 import { getContact } from '../contacts';
 

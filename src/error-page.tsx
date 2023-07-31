@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/namespace
 import { useRouteError } from 'react-router-dom';
 
 const ErrorPage = () => {

@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/namespace
 import { Link, Outlet, useLoaderData, Form } from 'react-router-dom';
 import { getContacts, createContact } from '../contacts';
 
