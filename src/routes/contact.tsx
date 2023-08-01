@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { Form, useLoaderData } from 'react-router-dom';
 import { getContact } from '../contacts';
 
-export const loader = async ({ params }) => {
+export const loader = async ({ params }: any) => {
   const contact = await getContact(params.contactId);
   return { contact };
 };
